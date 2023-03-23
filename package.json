@@ -1,0 +1,16 @@
+{
+  "name": "Project-JS--Gallery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:almeidaleandro28/Project-JS--Gallery.git",
+  "author": "leandro almeida da silva <almeidaleandro.silva@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass": "node_modules/.bin/sass src/scss/style.scss src/css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.59.3"
+  }
+}
+
+

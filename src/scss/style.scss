@@ -1,6 +1,15 @@
 @import "./reset";
 @import "./variables";
 @import "./responsive";
+// base
+@import "./base/base";
+// layout
+@import "./layout/main";
+@import "./layout/cite";
+@import "./layout/nature";
+@import "./layout/slide_nature";
+// components
+@import "./components/card";
 
 body {
   background-color: $c-white;

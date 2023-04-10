@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Js - Gallery</title>
   <link rel="stylesheet" href="./src/css/style.css">
+  <!-- icons-->
+  
 </head>
 <body>
   <main class="main">
@@ -95,22 +97,25 @@
 
 	</main><!--end main-->
 
-  <section class="slide_nature">
-    <div class="container">
+  <div class="modal" tabindex="-1" role="dialog">
 
-      <div class="slide_img"></div>
-      
-      <div class="slide_imgs">
+    <div class="modal_dialog">
 
-        <div class="card">
-          <img class="card_img" src="./src/img/img-nature-01.jpg" alt="nature img">
-        </div><!--end card-->
-     
-    
-      </div><!--end slide_imgs-->
+      <div class="modal_header">
+        <button class="btn btn_close">close</button>
+      </div><!--end modal_header-->
 
-    </div>
-  </section><!--end section_nature-->
+      <div class="modal_body">
+        modal content
+      </div><!--end modal content-->
+
+      <div class="modal_footer">
+        modal footer
+      </div><!--end modal footer-->
+
+    </div><!--end modal_dialog-->
+  </div><!--end modal-->
+
 <script src="./src/js/index.js"></script>
 </body>
 </html>

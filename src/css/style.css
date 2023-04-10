@@ -112,6 +112,23 @@ img {
   display: none;
 }
 
+.modal_body,
+.modal_footer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modal_header {
+  display: flex;
+  justify-content: end;
+  margin: 1rem 1rem;
+}
+
+.modal_body {
+  color: #ffffff;
+}
+
 .btn_close {
   background-color: #ffffff;
   cursor: pointer;

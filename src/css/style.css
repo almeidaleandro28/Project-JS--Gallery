@@ -112,6 +112,12 @@ img {
   display: none;
 }
 
+.btn_close {
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
 body {
   background-color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

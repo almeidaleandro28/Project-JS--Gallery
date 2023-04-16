@@ -65,10 +65,17 @@ table {
 }
 
 img {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 .main {
@@ -115,9 +122,10 @@ img {
 
 .modal_body,
 .modal_footer {
-  width: 80%;
-  max-width: 1200px;
+  color: #ffffff;
   margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
 }
 
 .modal_header {
@@ -128,6 +136,23 @@ img {
 
 .modal_body {
   color: #ffffff;
+  display: flex;
+  margin-bottom: 2rem;
+  height: 320px;
+  position: relative;
+}
+
+.modal_body_right {
+  height: 100%;
+}
+
+.modal_body_center {
+  flex: 2;
+  height: 100%;
+}
+
+.modal_body_left {
+  height: 100%;
 }
 
 .btn_close {

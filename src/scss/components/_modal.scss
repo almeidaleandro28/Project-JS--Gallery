@@ -11,9 +11,11 @@
 
 .modal_body,
 .modal_footer {
-  width: 80%;
-  max-width: 1200px;
+  color: $c-white;
   margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+  
 }
 
 .modal_header {
@@ -24,4 +26,20 @@
 
 .modal_body {
   color: $c-white;
+  height: 320px;
+  position: relative;
+  display: flex;
+}
+
+.modal_body_right {
+  height: 100%;
+}
+
+.modal_body_center {
+  flex: 2;
+  height: 100%;
+}
+
+.modal_body_left {
+  height: 100%;
 }

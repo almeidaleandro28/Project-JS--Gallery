@@ -5,8 +5,15 @@ const main = document.querySelector(".main");
 const modal = document.querySelector(".modal");
 const btClose = document.querySelector(".btn_close");
 
+
 sectioNature.addEventListener("click", ( e ) => {
   // const getEvent = e.currentTarget;
+  sectioCity.display = "none";
+  sectioNature.display = "none";
+  modal.style.display = "block";
+});
+
+sectioCity.addEventListener("click", ( e ) => {
   sectioCity.display = "none";
   sectioNature.display = "none";
   modal.style.display = "block";
@@ -15,4 +22,6 @@ sectioNature.addEventListener("click", ( e ) => {
 btClose.addEventListener("click", () => {
   modal.style.display = "none";
 });
+
+
 

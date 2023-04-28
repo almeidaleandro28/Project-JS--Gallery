@@ -4,7 +4,10 @@ const sectioCity = document.querySelector(".city");
 const main = document.querySelector(".main");
 const modal = document.querySelector(".modal");
 const btClose = document.querySelector(".btn_close");
-const $modalCenter = document.querySelector(".modal_body_center");
+let $modalCenter = document.querySelector(".modal_body_center");
+const $natureImgs = document.querySelector(".nature_img");
+
+
 
 
 sectioNature.addEventListener("click", ( e ) => {
@@ -13,10 +16,10 @@ sectioNature.addEventListener("click", ( e ) => {
   sectioNature.display = "none";
   modal.style.display = "block";
 
- const currentImg = e.target;
- const copyImage = currentImg.cloneNode( true);
+  let currentImg = e.target;
+  let imgSrc = currentImg.src;
 
-$modalCenter.append( copyImage)
+  $modalCenter.innerHTML = `<img src=${imgSrc} />`;
 
 });
 
@@ -28,6 +31,8 @@ sectioCity.addEventListener("click", ( e ) => {
 
 btClose.addEventListener("click", () => {
   modal.style.display = "none";
+	
+
   
 });
 

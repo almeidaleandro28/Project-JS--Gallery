@@ -30,13 +30,23 @@ sectioNature.addEventListener("click", ( e ) => {
     $modalFooterGallery.innerHTML += `<img src=${img.src}>`;
   });
 
-
 });
+
 
 sectioCity.addEventListener("click", ( e ) => {
   sectioCity.display = "none";
   sectioNature.display = "none";
   modal.style.display = "block";
+
+  let currentImg = e.target;
+  let imgSrc = currentImg.src;
+  let imgTitle = currentImg.title;
+
+  $modalCenter.innerHTML = `<img src=${imgSrc} />
+                            <h1 class="h1">${imgTitle}<h1>`;
+
+  
+
 });
 
 btClose.addEventListener("click", () => {

@@ -8,9 +8,7 @@ let $modalCenter = document.querySelector(".modal_body_center");
 let $modalFooter = document.querySelector(".modal_footer");
 let $modalFooterGallery = document.querySelector(".modal_footer_gallery");
 const $natureImgs = document.querySelectorAll(".nature_img");
-
-
-
+const $cityImgs = document.querySelectorAll(".card_img");
 
 
 sectioNature.addEventListener("click", ( e ) => {
@@ -45,14 +43,15 @@ sectioCity.addEventListener("click", ( e ) => {
   $modalCenter.innerHTML = `<img src=${imgSrc} />
                             <h1 class="h1">${imgTitle}<h1>`;
 
+  $cityImgs.forEach( img => {
+    $modalFooterGallery.innerHTML += `<img src=${img.src}>`;
+  })
   
-
 });
 
 btClose.addEventListener("click", () => {
   modal.style.display = "none";
-	
-
+  $modalFooterGallery.innerHTML = ""
   
 });
 

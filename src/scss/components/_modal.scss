@@ -31,6 +31,15 @@
   position: relative;
 }
 
+.modal_body_left,
+.modal_body_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .modal_body_right {
   height: 100%;
 }
